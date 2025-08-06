@@ -8,7 +8,7 @@ import sqlite3
 from datetime import datetime
 
 app = Flask(__name__)
-app.secret_key = "firoz---_secret_key"
+app.secret_key = "firoz_secret_key"
 ADMIN_PASSWORD = "3315"
 
 # Initialize SQLite database
@@ -654,4 +654,5 @@ if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
 
     app.run(host='0.0.0.0', port=port)
+
 
